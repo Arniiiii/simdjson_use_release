@@ -49,7 +49,7 @@ file(
 file(
   DOWNLOAD
   https://github.com/simdjson/simdjson/releases/download/v${simdjson_VERSION}/simdjson.h
-  ./simdjson/include/simdjson/simdjson.h)
+  ./simdjson/include/simdjson.h)
 
 add_library(simdjson ./simdjson/simdjson.cpp)
 target_include_directories(
