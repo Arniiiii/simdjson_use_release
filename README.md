@@ -6,7 +6,7 @@ It's a project that ensures that you use release version of simdjson.h and simdj
 
 1. Add the project via CPM or add_subdirectory or whatever and set in options `simdjson_VERSION` to something like `3.10.1`
 2. Link the `simdjson` to your project.
-3. Include `simdjson.h` in your header files.
+3. Include `simdjson/simdjson.h` in your header files.
 
 # License
 
