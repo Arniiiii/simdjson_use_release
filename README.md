@@ -5,6 +5,15 @@ It's a project that ensures that you use release version of simdjson.h and simdj
 # How to use
 
 1. Add the project via CPM or add_subdirectory or whatever and set in options `simdjson_VERSION` to something like `3.10.1`
+```cmake
+CPMAddPackage(
+  NAME simdjson
+  VERSION ${simdjson_VERSION}
+  GIT_TAG main
+  GIT_REPOSITORY https://github.com/Arniiiii/simdjson_use_release.git
+  OPTIONS ${simdjson_VERSION}
+)
+```
 2. Link the `simdjson` to your project.
 3. Include `simdjson.h` in your header files.
 
