@@ -45,13 +45,13 @@ cpmaddpackage(
 file(
   DOWNLOAD
   https://github.com/simdjson/simdjson/releases/download/v${simdjson_VERSION}/simdjson.cpp
-  ./simdjson/simdjson.cpp)
+  ${CMAKE_CURRENT_LIST_DIR}/simdjson/simdjson.cpp)
 file(
   DOWNLOAD
   https://github.com/simdjson/simdjson/releases/download/v${simdjson_VERSION}/simdjson.h
-  ./simdjson/include/simdjson.h)
+  ${CMAKE_CURRENT_LIST_DIR}/simdjson/include/simdjson.h)
 
-add_library(simdjson ./simdjson/simdjson.cpp)
+add_library(simdjson ${CMAKE_CURRENT_LIST_DIR}/simdjson/simdjson.cpp)
 target_include_directories(
   simdjson
   PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/simdjson/include>
