@@ -11,7 +11,7 @@ CPMAddPackage(
   VERSION ${simdjson_VERSION}
   GIT_TAG main
   GIT_REPOSITORY https://github.com/Arniiiii/simdjson_use_release.git
-  OPTIONS ${simdjson_VERSION}
+  OPTIONS "simdjson_VERSION ${simdjson_VERSION}"
 )
 ```
 2. Link the `simdjson` to your project.
